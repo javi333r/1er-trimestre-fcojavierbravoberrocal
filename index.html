@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="./IMAGENES/walter-white.png">
+    <title>Breakig Bad-Fco Javier Bravo</title>
+    <link rel="stylesheet" href="./CSS/index.css">
+</head>
+<body>
+    <div id="wrapper">
+        <nav>
+            <ul class="topnav">
+                <li><a class="active" href="#color">Home</a></li>
+                <li><a href="#autor">Autor</a></li>
+                <li><a href="#ideas">Informacion</a></li>
+                <li><a href="#autores">Potagonistas</a></li>
+                <li><a href="./fotos.html">Galeria</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+              </ul>
+        </nav>
+        <section id="color">
+
+            <div id="titulo"> 
+                Breaking Bad
+            </div>
+
+            <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                  <div class="numbertext">1 / 3</div>
+                  <img src="./IMAGENES/HOME.jpg" style="width:100%">
+                </div>
+                
+                <div class="mySlides fade">
+                  <div class="numbertext">2 / 3</div>
+                  <img src="./IMAGENES/HOME2.jpg" style="width:100%">
+                </div>
+                
+                <div class="mySlides fade">
+                  <div class="numbertext">3 / 3</div>
+                  <img src="./IMAGENES/HOME3.jpg" style="width:100%">
+                </div>
+                
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+                
+                </div>
+                <br>
+                
+                <div style="text-align:center">
+                  <span class="dot" onclick="currentSlide(1)"></span> 
+                  <span class="dot" onclick="currentSlide(2)"></span> 
+                  <span class="dot" onclick="currentSlide(3)"></span> 
+                </div>
+                
+                <script>
+                let slideIndex = 1;
+                showSlides(slideIndex);
+                
+                function plusSlides(n) {
+                  showSlides(slideIndex += n);
+                }
+                
+                function currentSlide(n) {
+                  showSlides(slideIndex = n);
+                }
+                
+                function showSlides(n) {
+                  let i;
+                  let slides = document.getElementsByClassName("mySlides");
+                  let dots = document.getElementsByClassName("dot");
+                  if (n > slides.length) {slideIndex = 1}    
+                  if (n < 1) {slideIndex = slides.length}
+                  for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";  
+                  }
+                  for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                  }
+                  slides[slideIndex-1].style.display = "block";  
+                  dots[slideIndex-1].className += " active";
+                }
+                </script>
+        </section>
+        <section id="autor">
+            <div class="titulo-seccion">
+            Autor
+            </div>
+            <div id="grid2">
+                <div class="col2">
+                    <img src="./IMAGENES/AUTOR.webp" alt="Una foto fea">
+                </div>
+                <div class="col2 col-texto">
+                El autor de la serie "Breaking Bad" es Vince Gilligan, gionista y productor estadounidense, tambien creador de Better Call Saul. Ha trabajado en variedad de series y peliculas reconocidas, por ejemplo The X Files y Los pistoleros solitarios, por ultimo, se graduo en la universidad de Nueva York.
+                </div>
+        </section>
+        <section id="ideas">
+            <div class="titulo-seccion">
+            Informacion y datos
+            </div>
+            <!-- monto contenedor grid -->
+            <div id="grid2"> 
+                <div class="col2">
+                    <img src="./IMAGENES/IDEA.jpg" alt="Una foto fea">
+                </div>
+                <div class="col2 col-texto">
+                    La serie se desarrola en Estados Unidos, en concreto, en un estado del sur llamado Nuevo Mexico, y por ultimo en la pequeña cuidad de Alburquerque, es practicamente un desierto por el calor que hace en el lugar, la produccion de la serie eligio esta ciudad ya que en Nuevo Mexico
+                    los costes de produccion de series son reducidos y Netflix tenia un presupuesto bajo para esa serie, al final, la ciudad se ha acabado convirtiendo en historia de Breaking Bad
+                </div>
+                <div class="col2 col-texto">
+                    La serie ha llegado a ser tan famosa que se ha convertido en una serie de culto, en Alburquerque, para rendir homenaje a la proclamada serie, le hicieron 2 estatuas a los protagonistas, Walter White y Jesse Pikman, fueron esculpidas por Trevor Grove y estan hehcas de bronce, actualmente las estatuas se encuentran en el centro de convenciones de Alburquerque, que es la ciudad mas grande de Nuevo Mexico, y tiene estatuas de Breaking Bad !!
+                </div>
+                <div class="col2">
+                    <img src="./IMAGENES/IDEA2.webp" alt="foto fea">
+                </div>
+            </div>
+        </section>
+        <section id="autores">
+            <div class="titulo-seccion">
+                Potagonistas
+            </div>
+            <div id="grid2"> 
+                <div class="col2">
+                    <img src="./IMAGENES/PROTA11.webp" alt="Una foto fea">
+                </div>
+                <div class="col2 col-texto">
+                    Walter White, tambien conocido como Walt para las personas cercanas y como Heisenberg en el mundo del crimen, es el protagonista principal de la sere Breaking Bad. Fue hijo unico y perdio a su padre cuando tenia 6 años, destacando en el campo de la quimica con su ayudante de laboratorio, su pareja, Skyler, Walter creo una investigacion con su grupo pero acabo abandonando la fundacion vendiendo sus acciones, tuvo un hijo llamado Walter Jr que tiene paralisis cerebral, al final de todo, cuando contrajo cancer de pulmon empezo a hacer metanfetamina para conseguir dinero para su familia cuando el ya no este, asi se hizo conocido en el mundo del crimen como Heisenberg.
+                </div>
+                <div class="col2 col-texto">
+                    Jesse Pinkman, es un antiguo estudiante de el instituto de Alburquerque, los dos acabaron cocinando juntos ya que Jesse cocinaba antes con otro socio y Walter lo fue a buscar para cocinar, tiene un hermano pequeño y su familia es de Alburquerque, debido a sus problemas con las drogas los padres lo hecharon de casa con 18 años, es protagonista de una pelicula del universo de Breaking Bad en la que cuentan el final de Jesse y como acaba todo para el.
+                </div>
+                <div class="col2">
+                    <img src="./IMAGENES/PROTA2.webp" alt="foto fea">
+                </div>    
+            </div>
+            <div id="grid2"> 
+                <div class="col2">
+                    <img src="./IMAGENES/PROTA3.jpg" alt="Una foto fea">
+                </div>
+                <div class="col2 col-texto">
+                    Gustavo Fring era el líder criminal de un imperio de drogas y el dueño de la cadena de restaurantes Los Pollos Hermanos. Un magnate de negocios y filántropo nacido en Chile. Inicialmente estaba afiliado al Cártel de Juárez, que utilizaba en secreto sus restaurantes como una tapadera legítima para la distribución de metanfetamina en todo el suroeste de Estados Unidos. Al igual que Walter White, Gus era un criminal que se escondía "en plena vista," recurriendo a su posición social como filántropo para ocultar su verdadera naturaleza según construía su imperio. 
+                </div>
+                <div class="col2 col-texto">
+                    James "Jimmy" Morgan McGill, conocido posteriormente como Saul Goodman, es un abogado criminal de Albuquerque conocido en la ciudad por sus peculiares anuncios televisivos que se emiten a altas horas de la noche, en el que menciona su lema, "Better Call Saul!" El nombre de Goodman es inventado para atraer a más clientes, ya que Saul Goodman se pronuncia como "it's all good man" (está todo bien, hombre). A pesar de su turbia apariencia, Saul sin duda es un hombre muy competente en sus asuntos criminales, eficiente a la hora de descubrir lagunas legales en casos y capaz de negociar buenos tratos en favor de sus clientes. 
+                </div>
+                <div class="col2">
+                    <img src="./IMAGENES/PROTA4.jpg" alt="foto fea">
+                </div>
+            </div>
+        </section>
+        <section id="contacto">
+            <div class="titulo-seccion">
+                Contacto
+             </div>
+
+        <div class="container-16-9">
+             <iframe class="responsive-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3197.2563608925925!2d-4.557001449757414!3d36.74041717986252!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd72f1d2ffe3a137%3A0xe095a3ea561debe2!2sC.%20Frederick%20Terman%2C%2029590%2C%20M%C3%A1laga!5e0!3m2!1ses!2ses!4v1669972330390!5m2!1ses!2ses"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        </section>
+            <footer>
+                <div class="grid3">
+                    <div class="col3">
+                        <a href="#color" class="enlace">Home</a><br>
+                        <a href="#autor" class="enlace">Autor</a><br>
+                        <a href="#ideas" class="enlace">Informacion</a><br>
+                        <a href="#autores" class="enlace">protagonistas</a><br>
+                        <a href="./fotos.html" class="enlace">Galeria</a><br>
+                        
+                    </div>
+                    <div class="col3" id="ancha">
+                        <p>Síguenos en redes:</p>
+                        <a href="https://es-la.facebook.com/BreakingBad/" class="fa fa-facebook"></a>
+                        <a href="https://twitter.com/breakingbad" class="fa fa-twitter"></a>
+                        <a href="https://www.youtube.com/@breakingbad" class="fa fa-youtube"></a>
+                        <a href="https://www.instagram.com/breakingbad/?hl=es" class="fa fa-instagram"></a>
+                
+                    </div>
+                    Fco Javier Bravo Berrocal
+                </div>
+                
+            </footer>
+    </div>
+</body>
+</html>
